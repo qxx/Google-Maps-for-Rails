@@ -547,7 +547,7 @@
       if (this._should_close_infowindow()) {
         this.constructor.CURRENT_INFOWINDOW.close();
       }
-      this.marker.panTo();
+      // this.marker.panTo();
       if (this.infowindow == null) {
         this.infowindow = this.create_infowindow();
       }
