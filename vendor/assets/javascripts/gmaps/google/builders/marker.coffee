@@ -53,7 +53,6 @@ class @Gmaps.Google.Builders.Marker extends Gmaps.Objects.BaseBuilder
 
   infowindow_binding: =>
     @constructor.CURRENT_INFOWINDOW.close() if @_should_close_infowindow()
-    @marker.panTo()
     @infowindow ?= @create_infowindow()
 
     return unless @infowindow?
